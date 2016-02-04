@@ -43,13 +43,14 @@ class BooksViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return htmlFiles.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = bookTableView.dequeueReusableCellWithIdentifier("BookCell", forIndexPath: indexPath)
-        cell.textLabel!.text = "row \(indexPath.row)"
-        print("row \(indexPath.row)")
+        let book = htmlFiles[indexPath.row]
+        cell.textLabel!.text = book
+        
         return cell
     }
     
