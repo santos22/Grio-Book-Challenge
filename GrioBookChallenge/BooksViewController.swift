@@ -18,7 +18,15 @@ class BooksViewController: UIViewController, UITableViewDataSource, UITableViewD
         bookTableView.delegate = self
         
         let serverUrl = "http://127.0.0.1:5000/uploads/"
-        
+        readFileNames()
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    func readFileNames() {
         // iterate through directory of html files and add to array
         let filemanager:NSFileManager = NSFileManager()
         let files = filemanager.enumeratorAtPath("/Users/santossolorzano/Desktop/challenge-books")
@@ -27,18 +35,11 @@ class BooksViewController: UIViewController, UITableViewDataSource, UITableViewD
         }
         
         // remove .DS_Store file name
-        htmlFiles.removeAtIndex(0) // numbers will be [2, 3]
+        htmlFiles.removeAtIndex(0)
         
         for file in htmlFiles {
             print("File " + file)
         }
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
