@@ -11,7 +11,9 @@ Time spent: **10>** hours spent in total
 The following functionality is complete:
 
 - [X] User can view a list of books currently hosted on a Flask server.
-- [X] File titles are loaded.
+- [X] HTML file titles are loaded.
+- [X] User can tab between only the books loaded or the Gutenberg library.
+- [X] In the Gutenberg library tab, user can refresh, reload, go back, and go forward on the page.
 
 ## Video Walkthrough
 
@@ -24,6 +26,8 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Challenges
 
 I had never worked with servers of any kind before (Flask, etc.) and it was challenging and enjoyable at the same time. Really looking forward to getting more experience with this :-)
+
+I also was unable to show the book title and authors in each row in the table view...I believe this required parsing the HTML pages
 
 ## License
 
