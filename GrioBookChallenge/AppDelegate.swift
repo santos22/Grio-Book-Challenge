@@ -21,11 +21,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let filesNavigationController = storyboard.instantiateViewControllerWithIdentifier("BooksNavigationController") as! UINavigationController
         //let filesViewController = filesNavigationController.topViewController as! BooksViewController
-        filesNavigationController.tabBarItem.title = "Files"
+        filesNavigationController.tabBarItem.title = "Books"
         
         let gutenbergNavigationController = storyboard.instantiateViewControllerWithIdentifier("GutenbergViewController") as! GutenbergViewController
         //let gutenbergViewController = gutenbergNavigationController.topViewController as! GutenbergViewController
-        gutenbergNavigationController.tabBarItem.title = "Gutenberg"
+        gutenbergNavigationController.tabBarItem.title = "Gutenberg Library"
         
         let tabBarController = UITabBarController()
         tabBarController.viewControllers = [filesNavigationController, gutenbergNavigationController]

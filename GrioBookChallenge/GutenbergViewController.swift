@@ -24,7 +24,21 @@ class GutenbergViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    // typical browser actions
+    @IBAction func stop(sender: AnyObject) {
+        gutenbergWebview.stopLoading()
+    }
+    @IBAction func refresh(sender: AnyObject) {
+        gutenbergWebview.reload()
+    }
+    @IBAction func goBack(sender: AnyObject) {
+        gutenbergWebview.goBack()
+    }
+    @IBAction func goForward(sender: AnyObject) {
+        gutenbergWebview.goForward()
+    }
+    
     /*
     // MARK: - Navigation
 
