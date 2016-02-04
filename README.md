@@ -1,4 +1,4 @@
-*Grio Books*
+# Grio Books
 
 **Grio Books** is a reading app using Project Gutenberg Australia. An iOS application that allows users to read books.
 Books are hosted and served on a Flask server and the app has a screen showing you a list of books,
