@@ -68,10 +68,34 @@
             </objects>
             <point key="canvasLocation" x="1119" y="214"/>
         </scene>
+        <!--Gutenberg View Controller-->
+        <scene sceneID="VrB-dd-WeI">
+            <objects>
+                <viewController storyboardIdentifier="GutenbergViewController" id="leW-0J-PoJ" customClass="GutenbergViewController" customModule="GrioBookChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f5v-8Y-Po5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="6qu-Q9-oQh">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="gutenbergWebview" destination="6qu-Q9-oQh" id="n4c-WY-utz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="orW-Mv-xSy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1464" y="214"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Xg2-vR-hRf">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OgE-Qk-0Hq" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="BooksNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="OgE-Qk-0Hq" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="OkM-MW-6Gd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

@@ -16,6 +16,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let filesNavigationController = storyboard.instantiateViewControllerWithIdentifier("BooksNavigationController") as! UINavigationController
+        //let filesViewController = filesNavigationController.topViewController as! BooksViewController
+        filesNavigationController.tabBarItem.title = "Files"
+        
+        let gutenbergNavigationController = storyboard.instantiateViewControllerWithIdentifier("GutenbergViewController") as! GutenbergViewController
+        //let gutenbergViewController = gutenbergNavigationController.topViewController as! GutenbergViewController
+        gutenbergNavigationController.tabBarItem.title = "Gutenberg"
+        
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = [filesNavigationController, gutenbergNavigationController]
+        
+        window?.rootViewController = tabBarController
+        window?.makeKeyAndVisible()
+        
+        
         return true
     }
 
