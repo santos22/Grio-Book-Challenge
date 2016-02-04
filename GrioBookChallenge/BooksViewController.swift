@@ -68,6 +68,8 @@ class BooksViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         let readingScreenViewController = segue.destinationViewController as! ReadingScreenViewController
         readingScreenViewController.webviewUrl = url
+        
+        bookTableView.deselectRowAtIndexPath(indexPath!, animated: true)
     }
 
 }
