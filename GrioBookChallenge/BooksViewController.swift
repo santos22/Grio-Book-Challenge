@@ -8,11 +8,14 @@
 
 import UIKit
 
-class BooksViewController: UIViewController {
+class BooksViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var htmlFiles: [String] = []
-
+    @IBOutlet weak var bookTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        bookTableView.dataSource = self
+        bookTableView.delegate = self
         
         let serverUrl = "http://127.0.0.1:5000/uploads/"
         
@@ -36,6 +39,17 @@ class BooksViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 20
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = bookTableView.dequeueReusableCellWithIdentifier("BookCell", forIndexPath: indexPath)
+        cell.textLabel!.text = "row \(indexPath.row)"
+        print("row \(indexPath.row)")
+        return cell
     }
     
 
