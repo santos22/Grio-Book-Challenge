@@ -12,6 +12,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // iterate through directory of html files
+        let filemanager:NSFileManager = NSFileManager()
+        let files = filemanager.enumeratorAtPath("/Users/santossolorzano/Desktop/challenge-books")
+        while let file = files?.nextObject() {
+            print(file)
+        }
         // Do any additional setup after loading the view, typically from a nib.
     }
 
