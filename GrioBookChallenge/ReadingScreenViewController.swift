@@ -16,13 +16,12 @@ class ReadingScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(webviewUrl)
-        
-        let url = NSURL (string: "http://127.0.0.1:5000/uploads/0608271h.html");
-        let requestObj = NSURLRequest(URL: url!);
-        readingWebview.loadRequest(requestObj);
-
-        // Do any additional setup after loading the view.
+        // load url in webview
+        if let webviewUrl = self.webviewUrl {
+            let url = NSURL (string: webviewUrl);
+            let requestObj = NSURLRequest(URL: url!);
+            readingWebview.loadRequest(requestObj);
+        }
     }
 
     override func didReceiveMemoryWarning() {
