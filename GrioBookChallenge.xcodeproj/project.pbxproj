@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		041E70EC1C63083A00E55B62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E70EB1C63083A00E55B62 /* AppDelegate.swift */; };
-		041E70EE1C63083A00E55B62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E70ED1C63083A00E55B62 /* ViewController.swift */; };
 		041E70F11C63083B00E55B62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041E70EF1C63083B00E55B62 /* Main.storyboard */; };
 		041E70F31C63083B00E55B62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041E70F21C63083B00E55B62 /* Assets.xcassets */; };
 		041E70F61C63083B00E55B62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041E70F41C63083B00E55B62 /* LaunchScreen.storyboard */; };
+		041E70FE1C63150B00E55B62 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E70FD1C63150B00E55B62 /* BooksViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		041E70E81C63083900E55B62 /* GrioBookChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrioBookChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		041E70EB1C63083A00E55B62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		041E70ED1C63083A00E55B62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		041E70F01C63083B00E55B62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		041E70F21C63083B00E55B62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		041E70F51C63083B00E55B62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		041E70F71C63083B00E55B62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041E70FD1C63150B00E55B62 /* BooksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +55,11 @@
 			isa = PBXGroup;
 			children = (
 				041E70EB1C63083A00E55B62 /* AppDelegate.swift */,
-				041E70ED1C63083A00E55B62 /* ViewController.swift */,
 				041E70EF1C63083B00E55B62 /* Main.storyboard */,
 				041E70F21C63083B00E55B62 /* Assets.xcassets */,
 				041E70F41C63083B00E55B62 /* LaunchScreen.storyboard */,
 				041E70F71C63083B00E55B62 /* Info.plist */,
+				041E70FD1C63150B00E55B62 /* BooksViewController.swift */,
 			);
 			path = GrioBookChallenge;
 			sourceTree = "<group>";
@@ -136,8 +136,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				041E70EE1C63083A00E55B62 /* ViewController.swift in Sources */,
 				041E70EC1C63083A00E55B62 /* AppDelegate.swift in Sources */,
+				041E70FE1C63150B00E55B62 /* BooksViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

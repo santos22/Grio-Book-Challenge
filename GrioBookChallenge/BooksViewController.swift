@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  BooksViewController.swift
 //  GrioBookChallenge
 //
 //  Created by Santos Solorzano on 2/3/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class BooksViewController: UIViewController {
     var htmlFiles: [String] = []
 
     override func viewDidLoad() {
@@ -23,20 +23,30 @@ class ViewController: UIViewController {
             htmlFiles.append(file as! String)
         }
         
-        // remove .DS_Store file
+        // remove .DS_Store file name
         htmlFiles.removeAtIndex(0) // numbers will be [2, 3]
         
         for file in htmlFiles {
             print("File " + file)
         }
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
 
 }
-
