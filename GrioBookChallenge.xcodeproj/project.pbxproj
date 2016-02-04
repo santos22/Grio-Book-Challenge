@@ -12,6 +12,7 @@
 		041E70F31C63083B00E55B62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041E70F21C63083B00E55B62 /* Assets.xcassets */; };
 		041E70F61C63083B00E55B62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041E70F41C63083B00E55B62 /* LaunchScreen.storyboard */; };
 		041E70FE1C63150B00E55B62 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E70FD1C63150B00E55B62 /* BooksViewController.swift */; };
+		041E71001C631B4600E55B62 /* ReadingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E70FF1C631B4600E55B62 /* ReadingScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		041E70F51C63083B00E55B62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		041E70F71C63083B00E55B62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		041E70FD1C63150B00E55B62 /* BooksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
+		041E70FF1C631B4600E55B62 /* ReadingScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadingScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				041E70F41C63083B00E55B62 /* LaunchScreen.storyboard */,
 				041E70F71C63083B00E55B62 /* Info.plist */,
 				041E70FD1C63150B00E55B62 /* BooksViewController.swift */,
+				041E70FF1C631B4600E55B62 /* ReadingScreenViewController.swift */,
 			);
 			path = GrioBookChallenge;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				041E70EC1C63083A00E55B62 /* AppDelegate.swift in Sources */,
+				041E71001C631B4600E55B62 /* ReadingScreenViewController.swift in Sources */,
 				041E70FE1C63150B00E55B62 /* BooksViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

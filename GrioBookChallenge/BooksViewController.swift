@@ -17,7 +17,6 @@ class BooksViewController: UIViewController, UITableViewDataSource, UITableViewD
         bookTableView.dataSource = self
         bookTableView.delegate = self
         
-        let serverUrl = "http://127.0.0.1:5000/uploads/"
         readFileNames()
     }
 
@@ -36,10 +35,6 @@ class BooksViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         // remove .DS_Store file name
         htmlFiles.removeAtIndex(0)
-        
-        for file in htmlFiles {
-            print("File " + file)
-        }
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -55,14 +50,24 @@ class BooksViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        let cell = sender as! UITableViewCell
+        let indexPath = bookTableView.indexPathForCell(cell)
+        
+        let serverUrl = "http://127.0.0.1:5000/uploads/"
+        let serverSuffix = htmlFiles[indexPath!.row]
+        
+        let url = serverUrl + serverSuffix
+        
+        let readingScreenViewController = segue.destinationViewController as! ReadingScreenViewController
+        readingScreenViewController.webviewUrl = url
     }
-    */
 
 }

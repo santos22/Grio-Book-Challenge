@@ -43,10 +43,10 @@
             </objects>
             <point key="canvasLocation" x="748" y="214"/>
         </scene>
-        <!--View Controller-->
+        <!--Reading Screen View Controller-->
         <scene sceneID="jEm-CC-F1q">
             <objects>
-                <viewController id="FHB-CS-hJu" sceneMemberID="viewController">
+                <viewController id="FHB-CS-hJu" customClass="ReadingScreenViewController" customModule="GrioBookChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LuN-Yq-h7O">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -60,6 +60,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="qkf-Qa-Nb4"/>
+                    <connections>
+                        <outlet property="readingWebview" destination="M8h-D8-978" id="Qna-5l-dfN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9QO-2Z-IXH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
