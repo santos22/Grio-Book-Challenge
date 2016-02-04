@@ -25,6 +25,7 @@ class BooksViewController: UIViewController, UITableViewDataSource, UITableViewD
         // Dispose of any resources that can be recreated.
     }
     
+    // reads file names from the directory of books and stores in an array
     func readFileNames() {
         // iterate through directory of html files and add to array
         let filemanager:NSFileManager = NSFileManager()
@@ -57,14 +58,13 @@ class BooksViewController: UIViewController, UITableViewDataSource, UITableViewD
         let cell = sender as! UITableViewCell
         let indexPath = bookTableView.indexPathForCell(cell)
         
+        // append file name to server url string to access book
         let serverUrl = "http://127.0.0.1:5000/uploads/"
         let serverSuffix = htmlFiles[indexPath!.row]
-        
         let url = serverUrl + serverSuffix
         
         let readingScreenViewController = segue.destinationViewController as! ReadingScreenViewController
         readingScreenViewController.webviewUrl = url
-        
         bookTableView.deselectRowAtIndexPath(indexPath!, animated: true)
     }
 

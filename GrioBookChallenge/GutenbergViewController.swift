@@ -11,9 +11,11 @@ import UIKit
 class GutenbergViewController: UIViewController {
 
     @IBOutlet weak var gutenbergWebview: UIWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // load Gutenberg website
         let url = NSURL (string: "http://gutenberg.net.au/");
         let requestObj = NSURLRequest(URL: url!);
         gutenbergWebview.loadRequest(requestObj);
@@ -38,15 +40,5 @@ class GutenbergViewController: UIViewController {
     @IBAction func goForward(sender: AnyObject) {
         gutenbergWebview.goForward()
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

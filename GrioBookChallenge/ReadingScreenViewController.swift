@@ -16,7 +16,7 @@ class ReadingScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // load url in webview
+        // load corresponding book url in webview
         if let webviewUrl = self.webviewUrl {
             let url = NSURL (string: webviewUrl);
             let requestObj = NSURLRequest(URL: url!);
@@ -28,16 +28,5 @@ class ReadingScreenViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
