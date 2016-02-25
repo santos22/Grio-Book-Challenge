@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:GrioBookChallenge.xcodeproj">
+      location = "self:/Users/santossolorzano/GitHub/ProjectGutenberg/ProjectGutenberg.xcodeproj">
    </FileRef>
 </Workspace>

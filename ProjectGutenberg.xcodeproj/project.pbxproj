@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		041E70E81C63083900E55B62 /* GrioBookChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrioBookChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		041E70E81C63083900E55B62 /* ProjectGutenberg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectGutenberg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		041E70EB1C63083A00E55B62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		041E70F01C63083B00E55B62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		041E70F21C63083B00E55B62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		041E70DF1C63083800E55B62 = {
 			isa = PBXGroup;
 			children = (
-				041E70EA1C63083900E55B62 /* GrioBookChallenge */,
+				041E70EA1C63083900E55B62 /* ProjectGutenberg */,
 				041E70E91C63083900E55B62 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,12 +50,12 @@
 		041E70E91C63083900E55B62 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				041E70E81C63083900E55B62 /* GrioBookChallenge.app */,
+				041E70E81C63083900E55B62 /* ProjectGutenberg.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		041E70EA1C63083900E55B62 /* GrioBookChallenge */ = {
+		041E70EA1C63083900E55B62 /* ProjectGutenberg */ = {
 			isa = PBXGroup;
 			children = (
 				041E70EB1C63083A00E55B62 /* AppDelegate.swift */,
@@ -67,15 +67,15 @@
 				041E70FF1C631B4600E55B62 /* ReadingScreenViewController.swift */,
 				04E3786E1C63358C003DD322 /* GutenbergViewController.swift */,
 			);
-			path = GrioBookChallenge;
+			path = ProjectGutenberg;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		041E70E71C63083900E55B62 /* GrioBookChallenge */ = {
+		041E70E71C63083900E55B62 /* ProjectGutenberg */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 041E70FA1C63083B00E55B62 /* Build configuration list for PBXNativeTarget "GrioBookChallenge" */;
+			buildConfigurationList = 041E70FA1C63083B00E55B62 /* Build configuration list for PBXNativeTarget "ProjectGutenberg" */;
 			buildPhases = (
 				041E70E41C63083900E55B62 /* Sources */,
 				041E70E51C63083900E55B62 /* Frameworks */,
@@ -85,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = GrioBookChallenge;
-			productName = GrioBookChallenge;
-			productReference = 041E70E81C63083900E55B62 /* GrioBookChallenge.app */;
+			name = ProjectGutenberg;
+			productName = ProjectGutenberg;
+			productReference = 041E70E81C63083900E55B62 /* ProjectGutenberg.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -106,7 +106,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 041E70E31C63083800E55B62 /* Build configuration list for PBXProject "GrioBookChallenge" */;
+			buildConfigurationList = 041E70E31C63083800E55B62 /* Build configuration list for PBXProject "ProjectGutenberg" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -119,7 +119,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				041E70E71C63083900E55B62 /* GrioBookChallenge */,
+				041E70E71C63083900E55B62 /* ProjectGutenberg */,
 			);
 		};
 /* End PBXProject section */
@@ -256,9 +256,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = GrioBookChallenge/Info.plist;
+				INFOPLIST_FILE = ProjectGutenberg/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.santos.GrioBookChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.santos.ProjectGutenberg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -267,9 +267,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = GrioBookChallenge/Info.plist;
+				INFOPLIST_FILE = ProjectGutenberg/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.santos.GrioBookChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.santos.ProjectGutenberg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -277,7 +277,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		041E70E31C63083800E55B62 /* Build configuration list for PBXProject "GrioBookChallenge" */ = {
+		041E70E31C63083800E55B62 /* Build configuration list for PBXProject "ProjectGutenberg" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				041E70F81C63083B00E55B62 /* Debug */,
@@ -286,7 +286,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		041E70FA1C63083B00E55B62 /* Build configuration list for PBXNativeTarget "GrioBookChallenge" */ = {
+		041E70FA1C63083B00E55B62 /* Build configuration list for PBXNativeTarget "ProjectGutenberg" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				041E70FB1C63083B00E55B62 /* Debug */,
